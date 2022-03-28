@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\shell\Edit with vim]
+"Icon"="D:\\nvim\\bin\\nvim-qt.exe,0"
+@="”√ Neovim ±‡º≠"
+
+[HKEY_CLASSES_ROOT\*\shell\Edit with vim\command]
+@="D:\\nvim\\bin\\nvim-qt.exe --no-ext-tabline \"%1\""
