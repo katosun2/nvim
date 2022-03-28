@@ -231,7 +231,9 @@ set undodir=$UNDOCACHE
 " load my dict
 set dictionary=$MYDICT
 
-autocmd BufEnter * lcd %:p:h
+" auto change working path
+autocmd! BufEnter,BufNewFile,WinEnter,TabEnter * lcd %:p:h
+set autochdir
 
 " load global functions
 source $FUNCS

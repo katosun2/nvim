@@ -45,7 +45,6 @@ let NERDTreeChDirMode=2
 let NERDTreeIgnore=['Thumbs.db','\~$','.DS_Store','\.pyc$','\.mp3','\.jpg','\.gif','\.swf','\.rar','\.zip','\.pdf','\.gz','\.bz2','\.dmg','\.doc','\.tar','\.png','\.rtf']
 map <silent><leader>uu <ESC>:NERDTree<cr>
 " fixed sets the working
-autocmd BufEnter * lcd %:p:h
   
   
 " NERD_commenter && authorinfo
