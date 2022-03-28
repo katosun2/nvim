@@ -1,0 +1,8 @@
+﻿.DS_Store
+.git
+.svn
+.cache/
+browsers/
+configstore/
+github-copilot/
+plugged/
