@@ -61,6 +61,6 @@ Plug 'sirver/ultisnips'
 
 Plug 'github/copilot.vim'
 
-"Plug 'katosun2/YouCompleteMe'
+Plug 'katosun2/YouCompleteMe'
 
 call plug#end()
