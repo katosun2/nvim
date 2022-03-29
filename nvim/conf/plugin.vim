@@ -252,8 +252,9 @@ nnoremap <Leader>gm :<C-u>:Git mergetool<CR>
   
 " vim-lsc
 let g:lsc_auto_map = v:true
+let g:lsc_enable_autocomplete = v:true
 let g:lsc_server_commands = {'dart': 'dart_language_server'}
-let g:lsc_enable_autocomplete = v:false
+let g:dart_style_guide = 2
 "auto dart dart format
 "autocmd BufWritePre *.dart* DartFmt
 
@@ -261,8 +262,10 @@ let g:lsc_enable_autocomplete = v:false
 " dart-vim-plugin
 let g:dart_style_guide = 2
 
+
 " getx-template.vim
 let g:getx_templates_path=$PLUGGED.'/getx-template.vim/templates/'
+
 
 " fish-redux-template.vim
 let g:fish_redux_templates_path=$PLUGGED.'/fish-redux-template.vim/templates/'
