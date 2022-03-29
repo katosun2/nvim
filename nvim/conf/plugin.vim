@@ -273,5 +273,6 @@ let g:fish_redux_templates_path=$PLUGGED.'/fish-redux-template.vim/templates/'
 
 " asyncrun
 let g:asyncrun_open = 8
+let g:asyncrun_encs='cp936'
 
 " vim: set noet fdm=manual ff=dos sts=2 sw=2 ts=2 tw=78 : 
