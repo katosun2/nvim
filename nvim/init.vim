@@ -46,7 +46,8 @@ let g:maplocalleader="."
 if has("multi_byte")
   " A,set encoding
   set encoding=utf-8
-  set fileencodings=utf-8,cp936,cp932
+  "set fileencodings=utf-8,cp936,cp932
+  set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
   set tenc=utf-8
   set maxcombine=4
   " open asia support
@@ -55,19 +56,19 @@ if has("multi_byte")
     set ambiwidth=double
   endif
 
-  if has("win32") || has("win64")
+  "if has("win32") || has("win64")
     "set fenc=chinese
-    set fenc=utf-8
+    "set fenc=utf-8
     set helplang=cn
-  else
-    set fenc=utf-8
-  endif
+  "else
+    "set fenc=utf-8
+  "endif
 
-  let &termencoding=&encoding
+  "let &termencoding=&encoding
 
   " B,vim tips support
-  language messages zh_CN.utf-8
-  "set langmenu=zh_CN.utf-8
+  language messages zh_CN.UTF-8
+  set langmenu=zh_CN.UTF-8
 endif
 
 
