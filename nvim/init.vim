@@ -241,4 +241,7 @@ source $PLUGLIST
 " load plugin setting
 source $PLUGIN
 
+" load lspconfig
+lua require('lsp')
+
 " vim: set et fdm=marker ff=dos sts=2 sw=2 ts=2 tw=78 : 
