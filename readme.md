@@ -5,11 +5,14 @@
 ## 安装语法解析
 ```
 // vuels
-npm install vls -g
+npm install -g vls
 
 // tsserver
 npm install -g typescript typescript-language-server
 
 // html
-npm i -g vscode-langservers-extracted
+npm install -g vscode-langservers-extracted
+
+// yamlls
+npm install -g yaml-language-server
 ```

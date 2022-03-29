@@ -9,7 +9,6 @@ Plug 'katosun2/imiku'
 Plug 'katosun2/jellybeans.vim'
 Plug 'katosun2/vim-browsers'
 Plug 'katosun2/load_template'
-"Plug 'katosun2/vetur'
 
 Plug 'posva/vim-vue'
 

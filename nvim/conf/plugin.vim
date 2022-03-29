@@ -272,6 +272,7 @@ require'lspconfig'.tsserver.setup{}
 require'lspconfig'.dartls.setup{}
 require'lspconfig'.html.setup{}
 require'lspconfig'.cssls.setup{}
+require'lspconfig'.yamlls.setup{}
 EOF
 
 " vim: set noet fdm=manual ff=dos sts=2 sw=2 ts=2 tw=78 : 
