@@ -265,4 +265,13 @@ let g:dart_style_guide = 2
 " fish-redux-template.vim
 let g:fish_redux_templates_path=$PLUGGED.'/fish-redux-template.vim/templates/'
 
+" nvim-lspconfig
+lua << EOF
+require'lspconfig'.vuels.setup{}
+require'lspconfig'.tsserver.setup{}
+require'lspconfig'.dartls.setup{}
+require'lspconfig'.html.setup{}
+require'lspconfig'.cssls.setup{}
+EOF
+
 " vim: set noet fdm=manual ff=dos sts=2 sw=2 ts=2 tw=78 : 

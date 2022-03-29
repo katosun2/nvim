@@ -9,7 +9,7 @@ Plug 'katosun2/imiku'
 Plug 'katosun2/jellybeans.vim'
 Plug 'katosun2/vim-browsers'
 Plug 'katosun2/load_template'
-Plug 'katosun2/vetur'
+"Plug 'katosun2/vetur'
 
 Plug 'posva/vim-vue'
 
@@ -63,5 +63,6 @@ Plug 'github/copilot.vim'
 
 " 会和 vim-copilot 冲突
 "Plug 'katosun2/YouCompleteMe'
+Plug 'neovim/nvim-lspconfig'
 
 call plug#end()
