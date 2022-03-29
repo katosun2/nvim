@@ -6,7 +6,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'chemzqm/wxapp.vim'
 
 Plug 'katosun2/imiku'
-Plug 'katosun2/jellybeans.vim'
+"Plug 'katosun2/jellybeans.vim'
 Plug 'katosun2/vim-browsers'
 Plug 'katosun2/load_template'
 
