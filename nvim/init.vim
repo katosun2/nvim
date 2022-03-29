@@ -58,9 +58,7 @@ if has("multi_byte")
   if has("win32") || has("win64")
     "set fenc=chinese
     set fenc=utf-8
-    if version>=603
-      set helplang=cn
-    endif
+    set helplang=cn
   else
     set fenc=utf-8
   endif
@@ -87,7 +85,8 @@ sy on
 
 " set color
 color jellybeans
-
+" fix pmenu
+au VimEnter * GuiPopupmenu 0
 
 " set doc format
 set fileformats=unix,dos
@@ -187,13 +186,12 @@ set foldmethod=manual
 set foldlevel=1
 set foldcolumn=4
 set modeline
-hi Folded guibg=#282828 guifg=#CE542E
-hi FoldColumn guibg=#282828 guifg=#CE542E
+hi Folded guibg=#282828 guifg=#CE542E"{{{
+hi FoldColumn guibg=#282828 guifg=#CE542E"}}}
 
 
 " set tab text mark
 set guioptions-=e
-
 
 " set global info
 set viminfo+=!
@@ -230,6 +228,7 @@ set undodir=$UNDOCACHE
 
 " load my dict
 set dictionary=$MYDICT
+
 
 " auto change working path
 autocmd! BufEnter,BufNewFile,WinEnter,TabEnter * lcd %:p:h

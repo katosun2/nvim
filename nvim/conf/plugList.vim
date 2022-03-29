@@ -61,6 +61,7 @@ Plug 'sirver/ultisnips'
 
 Plug 'github/copilot.vim'
 
-Plug 'katosun2/YouCompleteMe'
+" 会和 vim-copilot 冲突
+"Plug 'katosun2/YouCompleteMe'
 
 call plug#end()
