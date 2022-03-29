@@ -255,6 +255,7 @@ let g:lsc_auto_map = v:true
 let g:lsc_enable_autocomplete = v:true
 let g:lsc_server_commands = {'dart': 'dart_language_server'}
 let g:dart_style_guide = 2
+let g:dartfmt_options = ['--fix', '-l 180']
 "auto dart dart format
 "autocmd BufWritePre *.dart* DartFmt
 
