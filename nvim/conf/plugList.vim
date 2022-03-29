@@ -6,14 +6,12 @@ Plug 'junegunn/vim-easy-align'
 Plug 'chemzqm/wxapp.vim'
 
 Plug 'katosun2/imiku-vim'
-"Plug 'katosun2/jellybeans.vim'
 Plug 'katosun2/vim-browsers'
 Plug 'katosun2/load_template'
 
 Plug 'posva/vim-vue'
 
-"Plug 'dart-lang/dart-vim-plugin'
-Plug 'katosun2/dart-vim-plugin'
+Plug 'dart-lang/dart-vim-plugin'
 Plug 'natebosch/vim-lsc'
 Plug 'natebosch/vim-lsc-dart'
 Plug 'thosakwe/vim-flutter'
