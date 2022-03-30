@@ -31,6 +31,8 @@ npm install -g vls
 npm install -g typescript typescript-language-server
 // html, cssls, json
 npm install -g vscode-langservers-extracted
+// cssmodules
+npm install -g cssmodules-language-server
 // yamlls
 npm install -g yaml-language-server
 // dockerls

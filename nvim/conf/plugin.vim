@@ -18,14 +18,15 @@ map <F8> <ESC>:LoadTemplate<cr>
 " modeliner
 let g:Modeliner_format='et fdm= ff= sts= sw= ts= tw='
 map <silent><leader>sm <esc><s-g>o<esc>:Modeliner<cr>
-	
+
+
 " MRU
 if exists('*mkdir') && !isdirectory($MRU)
 	sil! cal mkdir($MRU, 'p')
 endif
 let MRU_File=$MRU . '/_vim_mru_files'
 let MRU_Max_Entries=20
-let MRU_Include_Files='\.snippets$\|\.vue$\|\.ts$\|\.scss$\|\.md$\|\.go$\|\.opf$\|\.js$\|\.java$\|\.jsx$\|\.ejs$\|\.css$\|\.yaml$\|\.html$\|\.htm$\|\.php$\|\.ini$\|\.conf$\|\.cs\|\.txt$\|\.sh$\|\.bat$\|\.vim$\|\.cmd$\|\.dart$\|\.wxss$\|\.wxml$\|\.proto$\|\.json$'
+let MRU_Include_Files='\.snippets$\|\.vue$\|\.ts$\|\.less$\|\.scss$\|\.md$\|\.go$\|\.opf$\|\.js$\|\.java$\|\.jsx$\|\.ejs$\|\.css$\|\.yaml$\|\.html$\|\.htm$\|\.lua$\|\.php$\|\.ini$\|\.conf$\|\.c$\|\.cpp$\|\.cs\|\.txt$\|\.sh$\|\.bat$\|\.vim$\|\.cmd$\|\.dart$\|\.wxss$\|\.wxml$\|\.proto$\|\.json$'
 let MRU_Window_Height=10
   
   
@@ -180,7 +181,7 @@ endif
 let g:ctrlp_max_depth=5
 let g:ctrlp_max_history=0
 let g:ctrlp_mruf_max=250
-let g:ctrlp_mruf_include='\.html$\|\.less$\|\.go$\|\.css$\|\.dart$\|\.yaml$\|\.scss$\|\.vue$\|\.js$\|\.jsx$\|\.ejs$\|\.php$'
+let g:ctrlp_mruf_include='\.html$\|\.less$\|\.go$\|\.css$\|\.sh$\|\.lua$\|\|\.dart$\|\.yaml$\|\.scss$\|\.vue$\|\.js$\|\.jsx$\|\.ejs$\|\.php$'
 set wildignore+=*\\.git\\*,*\\.hg\\*,*node_modules\\*,*\\.svn\\*
 let g:ctrlp_custom_ignore={
 			\ 'dir':  '\v[\/]\.(git|hg|svn)$',
