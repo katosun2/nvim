@@ -4,3 +4,6 @@ require'lspconfig'.dartls.setup{}
 require'lspconfig'.html.setup{}
 require'lspconfig'.cssls.setup{}
 require'lspconfig'.yamlls.setup{}
+require'lspconfig'.jsonls.setup{}
+require'lspconfig'.dockerls.setup{}
+require'lspconfig'.vimls.setup{}

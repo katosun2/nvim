@@ -31,8 +31,6 @@ let $PLUGIN = g:vim_conf_path . '/conf/plugin.vim'
 " third party app
 let $AG = g:vim_conf_path . '/../third_party/Ag/ag.exe'
 let $AJAXMIN = g:vim_conf_path . '/../third_party/AjaxMin/AjaxMin.exe'
-"let $NODEMODULES = g:vim_root_path . '/bin/node_modules/.bin'
-"let $JSHINT = $NODEMODULES.'/jshint.cmd'
 
 
 " set leader 
