@@ -120,8 +120,8 @@ set report=0
 
 
 " set font
-set guifont=Consolas:h17:cANSI 
-set guifontwide=Consolas:h17:cGB2312  
+"set guifont=Consolas:h17:cANSI
+autocmd vimEnter * Guifont! Consolas:h17:cANSI
 
 set linebreak 
 set nowrap
