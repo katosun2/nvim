@@ -19,6 +19,8 @@ export path+=D:\flutter\bin
 export XDG_CONFIG_HOME=D:\Neovim\share\config
 export XDG_DATA_HOME=D:\Neovim\share\config
 export path+=D:\Neovim\share\config\third_party\bin
+
+export path+=D:\Neovim\bin
 ```
 
 ## 安装语法解析
