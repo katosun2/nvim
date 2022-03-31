@@ -66,11 +66,6 @@ filetype plugin indent on
 sy on
 
 
-" set color
-color jellybeans
-" fix pmenu
-au VimEnter * GuiPopupmenu 0
-
 " set doc format
 set fileformats=unix,dos
 set nobomb
@@ -121,7 +116,13 @@ set report=0
 
 " set font
 "set guifont=Consolas:h17:cANSI
-autocmd vimEnter * Guifont! Consolas:h17:cANSI
+au vimEnter * Guifont Consolas:h17:cANSI
+
+" set color
+color jellybeans
+" fix pmenu color
+au VimEnter * GuiPopupmenu 0
+
 
 set linebreak 
 set nowrap
@@ -214,7 +215,8 @@ set dictionary=$MYDICT
 
 
 " auto change working path
-autocmd! BufEnter,BufNewFile,WinEnter,TabEnter * lcd %:p:h
+"autocmd! BufEnter,BufNewFile,WinEnter,TabEnter * lcd %:p:h
+autocmd! BufNewFile,WinEnter,TabEnter * lcd %:p:h
 set autochdir
 
 " load global functions
