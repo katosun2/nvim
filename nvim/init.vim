@@ -216,7 +216,6 @@ set dictionary=$MYDICT
 
 " auto change working path
 "autocmd! BufEnter,BufNewFile,WinEnter,TabEnter * lcd %:p:h
-autocmd! BufNewFile,WinEnter,TabEnter * lcd %:p:h
 set autochdir
 
 " load global functions
