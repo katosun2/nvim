@@ -268,6 +268,16 @@ map <leader>lsc <ESC>:LSClientAllDiagnostics<cr>
 " dart-vim-plugin
 let g:dart_style_guide = 2
 
+" flutter-tools
+" Show hover
+nnoremap K <Cmd>lua vim.lsp.buf.hover()<CR>
+" Jump to definition
+nnoremap <leader>gd <Cmd>lua vim.lsp.buf.definition()<CR>
+" Open code actions using the default lsp UI, if you want to change this please see the plugins above
+nnoremap <leader>ca <Cmd>lua vim.lsp.buf.code_action()<CR>
+" Open code actions for the selected visual range
+xnoremap <leader>ca <Cmd>lua vim.lsp.buf.range_code_action()<CR>
+
 
 " getx-template.vim
 let g:getx_templates_path=$PLUGGED.'/getx-template.vim/templates/'

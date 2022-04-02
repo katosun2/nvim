@@ -50,11 +50,3 @@ npm install -g vim-language-server
 dart format %*
 ```
 放在和dart.exe同级目录下面
-
-## natebosch/vim-lsc-dart 可能导致dart.exe占用内存过高
-- 打开 vim-lsc-dart/autoload/lsc/dart.vim
-- 手动将 onlyAnalyzeProjectsWithOpenFiles 定义为 v:true
-```
-'onlyAnalyzeProjectsWithOpenFiles': v:true
-```
-可能原因：https://github.com/dart-lang/sdk/issues/39967

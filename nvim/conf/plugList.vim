@@ -12,9 +12,12 @@ Plug 'katosun2/load_template'
 Plug 'posva/vim-vue'
 
 Plug 'dart-lang/dart-vim-plugin'
-Plug 'natebosch/vim-lsc'
-Plug 'natebosch/vim-lsc-dart'
+Plug 'akinsho/flutter-tools.nvim'
+"Plug 'natebosch/vim-lsc'
+"Plug 'natebosch/vim-lsc-dart'
+
 Plug 'thosakwe/vim-flutter'
+Plug 'nvim-lua/plenary.nvim'
 
 Plug 'ap/vim-css-color'
 

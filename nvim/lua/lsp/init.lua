@@ -8,3 +8,4 @@ require'lspconfig'.yamlls.setup{}
 require'lspconfig'.jsonls.setup{}
 require'lspconfig'.dockerls.setup{}
 require'lspconfig'.vimls.setup{}
+require("flutter-tools").setup{}
