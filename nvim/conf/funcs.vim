@@ -348,7 +348,7 @@ fun! DeleteAllBuffersInWindow()
   let s:nextBufNr = bufnr("%")
   while s:nextBufNr != s:curBufNr
     exe "bn"
-    exe "bdel" . s:nextBufNr
+    exe "bdel!" . s:nextBufNr
     let s:nextBufNr = bufnr("%")
   endwhile
 endfun

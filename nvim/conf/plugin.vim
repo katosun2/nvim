@@ -252,7 +252,8 @@ nnoremap <Leader>gm :<C-u>:Git mergetool<CR>
 
   
 " vim-lsc
-let g:lsc_auto_map = v:true
+" Apply the defaults with a few overrides:
+let g:lsc_auto_map = {'defaults': v:true, 'FindReferences': '<leader>r'}
 let g:lsc_enable_autocomplete = v:false
 let g:lsc_reference_highlights = v:false
 let g:lsc_server_commands = {'dart': 'dart_language_server'}
@@ -260,6 +261,8 @@ let g:dart_style_guide = 2
 let g:dartfmt_options = ['--fix', '-l 180']
 "auto dart dart format
 "autocmd BufWritePre *.dart* DartFmt
+"show all errors
+map <leader>lsc <ESC>:LSClientAllDiagnostics<cr>
 
 
 " dart-vim-plugin
