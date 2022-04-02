@@ -353,7 +353,7 @@ fun! DeleteAllBuffersInWindow()
     let s:nextBufNr = bufnr("%")
   endwhile
 endfun
-map <silent><leader>cbf :call DeleteAllBuffersInWindow()<CR>
+map <silent><leader>bb :call DeleteAllBuffersInWindow()<CR>
 "写入文件后清除所有缓冲区
 "au BufWritePost * call DeleteAllBuffersInWindow()
 
