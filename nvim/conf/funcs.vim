@@ -339,6 +339,7 @@ endf
 
 " 删除除当前buffer外所有buffer
 fun! DeleteAllBuffersInWindow()
+	"let buffers = len(map(filter(copy(getbufinfo()), 'v:val.listed'), 'v:val.bufnr'))
   let s:curWinNr = winnr()
   if winbufnr(s:curWinNr) == 1
     ret
@@ -352,8 +353,8 @@ fun! DeleteAllBuffersInWindow()
     let s:nextBufNr = bufnr("%")
   endwhile
 endfun
-map <silent><leader>bda :call DeleteAllBuffersInWindow()<CR>
+map <silent><leader>cbf :call DeleteAllBuffersInWindow()<CR>
 "写入文件后清除所有缓冲区
-au BufWritePost * call DeleteAllBuffersInWindow()
+"au BufWritePost * call DeleteAllBuffersInWindow()
 
 " vim: set noet fdm=manual ff=dos sts=2 sw=2 ts=2 tw=78 : 
