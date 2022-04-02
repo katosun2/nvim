@@ -121,7 +121,7 @@ vmap <C-z> <ESC>:w<cr>
 
 "强制退出使用Q"
 map <silent><A-q> <ESC>:q!<cr>
-map <silent><leader>q <ESC>:bdele!<cr>
+map <silent><leader>q :call DeleteAllBuffersInWindow()<cr><ESC>:bdele!<cr>
 map <silent><localleader>ww <ESC>:w!<cr>
 
 "粘贴系统剪贴板
@@ -336,5 +336,22 @@ function! g:ShowFen()
 		"return l:foldname
 	"endif
 endf
+
+" 删除除当前buffer外所有buffer
+fun! DeleteAllBuffersInWindow()
+	let s:curWinNr =  winnr()
+	if winbufnr(s:curWinNr) == 1
+		ret
+	endif
+	let s:curBufNr = bufnr("%")
+	exe "bn"
+	let s:nextBufNr = bufnr("%")
+	while s:nextBufNr != s:curBufNr
+		exe "bn"
+		exe "bdel" . s:nextBufNr
+		let s:nextBufNr = bufnr("%")
+	endwhile
+endfun
+map <silent><leader>bda :call DeleteAllBuffersInWindow()<CR>
 
 " vim: set noet fdm=manual ff=dos sts=2 sw=2 ts=2 tw=78 : 
