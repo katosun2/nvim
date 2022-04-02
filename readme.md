@@ -50,3 +50,8 @@ npm install -g vim-language-server
 dart format %*
 ```
 放在和dart.exe同级目录下面
+
+## git 代理
+```
+git config --global http.proxy 127.0.0.1:1080
+```
