@@ -42,7 +42,7 @@ Plug 'rking/ag.vim'
 Plug 'kien/ctrlp.vim'
 
 " manual install npm install 
-Plug 'ternjs/tern_for_vim'
+"Plug 'ternjs/tern_for_vim'
 " manual install make js 
 Plug 'maralla/completor.vim'
 

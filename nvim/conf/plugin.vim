@@ -253,7 +253,8 @@ nnoremap <Leader>gm :<C-u>:Git mergetool<CR>
   
 " vim-lsc
 let g:lsc_auto_map = v:true
-let g:lsc_enable_autocomplete = v:true
+let g:lsc_enable_autocomplete = v:false
+let g:lsc_reference_highlights = v:false
 let g:lsc_server_commands = {'dart': 'dart_language_server'}
 let g:dart_style_guide = 2
 let g:dartfmt_options = ['--fix', '-l 180']
