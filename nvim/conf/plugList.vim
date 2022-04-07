@@ -38,8 +38,9 @@ Plug 'pangloss/vim-javascript'
 Plug 'mattn/webapi-vim'
 Plug 'mxw/vim-jsx'
 
-Plug 'rking/ag.vim'
-Plug 'kien/ctrlp.vim'
+# install and download fzf
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 " manual install npm install 
 "Plug 'ternjs/tern_for_vim'

@@ -29,7 +29,6 @@ let $PLUGIN = g:vim_conf_path . '/conf/plugin.vim'
 
 
 " third party app
-let $AG = g:vim_conf_path . '/../third_party/Ag/ag.exe'
 let $AJAXMIN = g:vim_conf_path . '/../third_party/AjaxMin/AjaxMin.exe'
 
 

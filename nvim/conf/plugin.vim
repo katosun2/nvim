@@ -30,14 +30,6 @@ let MRU_Include_Files='\.snippets$\|\.vue$\|\.ts$\|\.less$\|\.scss$\|\.md$\|\.go
 let MRU_Window_Height=10
   
   
-" Ag search
-if !executable("ag")
-	let g:ag_prg=$AG . " --column --smart-case --depth -1"
-else
-	let g:ag_prg="ag --column --smart-case --depth -1"
-endif
-  
-  
 " NERDTree
 let NERDMenuMode=0
 let NERDTreeShowBookmarks=0
@@ -164,30 +156,8 @@ inoremap <silent><leader>jd <esc>:Dox<cr>
 map <F9> :Calendar<cr>
   
   
-" CtriP
-let g:ctrlp_map='<c-p>'
-let g:ctrlp_cmd='CtrlP'
-let g:ctrlp_working_path_mode='r'
-let g:ctrlp_match_window='bottom,order:ttb,min:10,max:10,results:10'
-let g:ctrlp_switch_buffer='E'
-let g:ctrlp_open_new_file='h'
-let g:ctrlp_max_files=5000
-let g:ctrlp_root_markers=['.git','.svn', 'node_modules']
-if isdirectory("z:/")
-	let g:ctrlp_cache_dir='z:/.cache/ctrlp'
-else
-	let g:ctrlp_cache_dir=$VIM.'/.cache/ctrlp'
-endif
-let g:ctrlp_max_depth=5
-let g:ctrlp_max_history=0
-let g:ctrlp_mruf_max=250
-let g:ctrlp_mruf_include='\.html$\|\.less$\|\.go$\|\.css$\|\.sh$\|\.lua$\|\|\.dart$\|\.yaml$\|\.scss$\|\.vue$\|\.js$\|\.jsx$\|\.ejs$\|\.php$'
-set wildignore+=*\\.git\\*,*\\.hg\\*,*node_modules\\*,*\\.svn\\*
-let g:ctrlp_custom_ignore={
-			\ 'dir':  '\v[\/]\.(git|hg|svn)$',
-			\ 'file': '\v\.(exe|so|dll|zip|jpg|git|png)$',
-			\ 'link': '',
-			\ }
+" fzf.vim
+nmap <C-P> :Files<CR>
   
   
 " syntastic
