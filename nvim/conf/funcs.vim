@@ -357,8 +357,7 @@ map <silent><leader>bb :call DeleteAllBuffersInWindow()<CR>
 
 
 " format json by python
-if !executable('python')
-	command! JsonFormat :execute '%!python -m json.tool'
-endif
+command! JsonFormat :execute '%!python -m json.tool --indent 2'
+command! JsonFormatLine :execute '%!python -m json.tool --no-indent'
 
 " vim: set noet fdm=manual ff=dos sts=2 sw=2 ts=2 tw=78 : 
