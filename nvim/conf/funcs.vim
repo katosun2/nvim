@@ -355,4 +355,10 @@ map <silent><leader>bb :call DeleteAllBuffersInWindow()<CR>
 "写入文件后清除所有缓冲区
 "au BufWritePost * call DeleteAllBuffersInWindow()
 
+
+" format json by python
+if !executable('python')
+	command! JsonFormat :execute '%!python -m json.tool'
+endif
+
 " vim: set noet fdm=manual ff=dos sts=2 sw=2 ts=2 tw=78 : 
