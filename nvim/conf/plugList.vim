@@ -63,4 +63,7 @@ Plug 'github/copilot.vim'
 "Plug 'katosun2/YouCompleteMe'
 Plug 'neovim/nvim-lspconfig'
 
+" Use release branch (recommend)
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 call plug#end()
