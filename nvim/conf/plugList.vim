@@ -60,7 +60,6 @@ Plug 'sirver/ultisnips'
 Plug 'github/copilot.vim'
 
 " 会和 vim-copilot 冲突
-"Plug 'katosun2/YouCompleteMe'
 Plug 'neovim/nvim-lspconfig'
 
 " Use release branch (recommend)
