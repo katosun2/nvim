@@ -148,14 +148,12 @@ map <leader>mw <ESC>:vert res<cr>
 
 "快速切换各种文件类型
 nnoremap <leader>1 :set ft=html<CR>
-nnoremap <leader>2 :set ft=css syn=css<CR>
-nnoremap <leader>3 :set ft=javascript syn=javascript<CR>
-nnoremap <leader>4 :set ft=php<CR>
-nnoremap <leader>5 :set ft=vim<CR>
-nnoremap <leader>6 :set ft=scss<CR>
-nnoremap <leader>7 :set ft=smarty<CR>
-nnoremap <leader>8 :set ft=snippet<CR>
-nnoremap <leader>9 :set ft=markdown<CR>
+nnoremap <leader>2 :set ft=css<CR>
+nnoremap <leader>3 :set ft=javascript<CR>
+nnoremap <leader>4 :set ft=vue<CR>
+nnoremap <leader>5 :set ft=scss<CR>
+nnoremap <leader>6 :set ft=dart<CR>
+nnoremap <leader>7 :set ft=php<CR>
 
 " 调用特殊功能方法
 map <F2> <ESC>:call g:SelectFunc()<CR>  
