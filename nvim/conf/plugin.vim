@@ -161,6 +161,7 @@ nmap <C-P> :Files<CR>
 
 " coc-nvim
 let g:coc_global_extensions = ['coc-json', 'coc-html', 'coc-tsserver', 'coc-css', 'coc-flutter', 'coc-flutter-tools']
+inoremap <leader>cd <esc>:CocDisable<cr>
   
   
 " syntastic
