@@ -160,7 +160,7 @@ map <F9> :Calendar<cr>
 nmap <C-P> :Files<CR>
 
 " coc-nvim
-let g:coc_global_extensions = ['coc-json', 'coc-html', 'coc-tsserver', 'coc-css', 'coc-flutter', 'coc-flutter-tools']
+let g:coc_global_extensions = ['coc-json', 'coc-html', 'coc-tsserver', 'coc-css', 'coc-flutter', 'coc-flutter-tools', 'coc-tsserver']
 nmap <leader>cd <esc>:CocDisable<cr>
   
   
