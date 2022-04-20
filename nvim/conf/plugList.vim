@@ -27,9 +27,8 @@ Plug 'vim-scripts/Modeliner'
 Plug 'tpope/vim-surround'
 Plug 'ynkdir/vim-iconv'
 
-"Plug 'Shougo/vimproc.vim'
-Plug 'katosun2/vimproc.vim'
-Plug 'Shougo/vimshell.vim'
+" Plug 'Shougo/vimproc.vim'
+" Plug 'Shougo/vimshell.vim'
 
 Plug 'scrooloose/syntastic'
 
@@ -58,6 +57,8 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'sirver/ultisnips'
 
 Plug 'github/copilot.vim'
+
+Plug 'adelarsq/vim-matchit'
 
 " 会和 vim-copilot 冲突
 Plug 'neovim/nvim-lspconfig'

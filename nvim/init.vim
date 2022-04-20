@@ -217,10 +217,10 @@ set dictionary=$MYDICT
 "autocmd! BufEnter,BufNewFile,WinEnter,TabEnter * lcd %:p:h
 set autochdir
 
-" load global functions
-source $FUNCS
 " load plug list
 source $PLUGLIST
+" load global functions
+source $FUNCS
 " load plugin setting
 source $PLUGIN
 

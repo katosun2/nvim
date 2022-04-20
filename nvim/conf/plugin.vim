@@ -40,23 +40,49 @@ map <silent><leader>uu <ESC>:NERDTree<cr>
 " fixed sets the working
   
   
-" NERD_commenter && authorinfo
+" authorinfo
 let g:vimrc_author='Ryu'   
 let g:vimrc_email='ryu@imiku.com'   
-let g:vimrc_homepage='http://www.imiku.com' 
+let g:vimrc_homepage='https://www.imiku.com' 
 map <leader>my <ESC>:AuthorInfoDetect<cr>   
 imap <leader>my <ESC>:AuthorInfoDetect<cr>   
 
-" Add your own custom formats or override the defaults
+
+" NERD_commenter
+" 取消默认的注释模式
+let g:NERDCreateDefaultMappings=0
+" 默认情况下，在注释分隔符后添加空格
+let g:NERDSpaceDelims = 1
+" 支持多行注释
+let g:NERDCompactSexyComs = 1                     
+" 按行对齐注释分隔符左对齐，而不是按代码缩进
+let g:NERDDefaultAlign = 'left'
+" 允许注释和反转空行（在注释区域时很有用） 
+let g:NERDCommentEmptyLines = 1
+" 取消注释时启用尾随空白的修剪
+let g:NERDTrimTrailingWhitespace = 1
+" 启用nerdcommenttoggle检查是否对所有选定行进行了注释
+let g:NERDToggleCheckAllLines = 1
+"自定义注释格式
 let g:NERDCustomDelimiters={
 			\ 'javascript': { 'left': '// ', 'leftAlt': '/* ', 'rightAlt': ' */' },
-			\ 'javascript.jquery': { 'left': '// ', 'leftAlt': '/* ', 'rightAlt': ' */' },
-			\ 'scss': { 'left': '// ', 'leftAlt': '/* ', 'rightAlt': ' */' },
-			\ 'less': { 'left': '/* ', 'right': ' */' },
-			\ 'htmldjango': { 'left': '<!-- ', 'right': ' -->', 'leftAlt': '{# ', 'rightAlt': ' #}' },
-			\ 'php': { 'left': '// ', 'leftAlt': '/* ', 'rightAlt': ' */' }
+			\ 'css': { 'leftAlt': '/* ', 'rightAlt': ' */' },
+			\ 'html': { 'left': '<!-- ', 'right': ' -->' }
 			\ }
-  
+map <silent> <leader>cc <plug>NERDCommenterComment
+"\cu取消当前行或选中行注释。
+map <silent> <leader>cu <plug>NERDCommenterUncomment
+"\c<space>当前或选中行中含有未注释的行，则都添加注释，都已注释则取消注释。
+map <silent> <leader>c<space> <plug>NERDCommenterToggle
+"\ci反转当前或选中行注释。
+map <silent> <leader>ci <plug>NERDCommenterInvert
+"\c$从光标位置（包括光标下的字符）注释到行末。
+map <silent> <leader>c$ <plug>NERDCommenterToEOL
+"\cA在行末添加注释并进入插入模式。
+map <silent> <leader>cA <plug>NERDCommenterAppend
+"\ca转换注释格式，比如//和/**/。
+map <silent> <leader>ca <plug>NERDCommenterAltDelims
+
   
 " fencview
 let g:fencview_autodetect=0
@@ -99,48 +125,6 @@ let g:UltiSnipsListSnippets="<c-e>"
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
   
   
-" YouCompleteMe
-" 在接受补全后不分裂出一个窗口显示接受的项
-" set completeopt-=preview
-"set completeopt=longest,menu
-" 寻找全局配置文件
-"  let g:ycm_global_ycm_extra_conf=$vim_conf_path.'/.ycm_extra_conf.py'
-"  " 输入第4个字符就开始补全
-"  let g:ycm_min_num_of_chars_for_completion=4
-"  " 关闭加载.ycm_extra_conf.py提示
-"  let g:ycm_confirm_extra_conf=0
-"  " 语法关键字补全
-"  let g:ycm_seed_identifiers_with_syntax=1
-"  " 开启 YCM 基于标签引擎
-"  let g:ycm_collect_identifiers_from_tags_files=0
-"  " 每次重新生成匹配项，禁止缓存匹配项
-"  let g:ycm_cache_omnifunc=0
-"  " 错误标识符
-"  let g:ycm_error_symbol='>>'
-"  " 警告标识符
-"  let g:ycm_warning_symbol='>*'
-"  " 注释补全
-"  let g:ycm_complete_in_comments=1
-"  " 查询ultisnips提供的代码模板补全
-"  let g:ycm_use_ultisnips_completer=1
-"  "在字符串输入中也能补全
-"  let g:ycm_complete_in_strings=1
-"  "注释和字符串中的文字也会被收入补全
-"  let g:ycm_collect_identifiers_from_comments_and_strings=0
-"  " 主动调用补全
-"  let g:ycm_key_invoke_completion='<C-c>'
-"  " 自定义调用语法解析服务
-"  let g:ycm_language_server=[
-"  			\   {
-"  				\     'name': 'vue',
-"  				\     'filetypes': [ 'vue', 'ts', 'typescript' ],
-"  				\     'cmdline': [ expand($PLUGGED.'\vetur\server\bin\vls')]
-"  				\   }
-"  				\ ]
-"  " 跳转到定义处
-"  nnoremap <leader>yd :YcmCompleter GoToDefinitionElseDeclaration<CR>
-  
-
 " doxygenToolkit for vim
 let g:DoxygenToolkit_briefTag_pre="@method "
 let g:DoxygenToolkit_paramTag_pre="@param { }"
