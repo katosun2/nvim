@@ -26,7 +26,7 @@ if exists('*mkdir') && !isdirectory($MRU)
 endif
 let MRU_File=$MRU . '/_vim_mru_files'
 let MRU_Max_Entries=20
-let MRU_Include_Files='\.snippets$\|\.vue$\|\.ts$\|\.less$\|\.scss$\|\.md$\|\.go$\|\.opf$\|\.js$\|\.java$\|\.jsx$\|\.ejs$\|\.css$\|\.yaml$\|\.html$\|\.htm$\|\.lua$\|\.php$\|\.ini$\|\.conf$\|\.c$\|\.cpp$\|\.cs\|\.txt$\|\.sh$\|\.bat$\|\.vim$\|\.cmd$\|\.dart$\|\.wxss$\|\.wxml$\|\.proto$\|\.json$'
+let MRU_Include_Files='\.snippets$\|\.vue$\|\.ts$\|\.tsx$\|\.less$\|\.scss$\|\.md$\|\.go$\|\.opf$\|\.js$\|\.java$\|\.jsx$\|\.ejs$\|\.css$\|\.yaml$\|\.html$\|\.htm$\|\.lua$\|\.php$\|\.ini$\|\.conf$\|\.c$\|\.cpp$\|\.cs\|\.txt$\|\.sh$\|\.bat$\|\.vim$\|\.cmd$\|\.dart$\|\.wxss$\|\.wxml$\|\.proto$\|\.py3$\|\.py$\|\.json$'
 let MRU_Window_Height=10
   
   
@@ -145,7 +145,12 @@ nmap <C-P> :Files<CR>
 
 " coc-nvim
 let g:coc_global_extensions = ['coc-json', 'coc-html', 'coc-tsserver', 'coc-css', 'coc-flutter', 'coc-flutter-tools']
+let g:coc_enabled = 0
 nmap <leader>cd <esc>:CocDisable<cr>
+" Make <CR> to accept selected completion item or notify coc.nvim to format
+" <C-g>u breaks current undo, please make your own choice.
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
   
   
 " syntastic

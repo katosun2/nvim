@@ -56,7 +56,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'sirver/ultisnips'
 
-Plug 'github/copilot.vim'
+" Plug 'github/copilot.vim'
 
 Plug 'adelarsq/vim-matchit'
 
