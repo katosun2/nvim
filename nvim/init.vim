@@ -10,6 +10,7 @@ let $BACKUPCACHE = $CACHE . '/backup'
 let $SWPCACHE = $CACHE . '/swp'
 let $VIEWCACHE = $CACHE . '/view'
 let $MRU = $CACHE . '/mru'
+" let g:python3_host_prog =
 
 " set brwosers
 let $BROWSERS = g:vim_conf_path . '/../browsers'
