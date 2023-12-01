@@ -242,8 +242,12 @@ nnoremap <leader>ca <Cmd>lua vim.lsp.buf.code_action()<CR>
 xnoremap <leader>ca <Cmd>lua vim.lsp.buf.range_code_action()<CR>
 
 " codeium
-" let g:codeium_disable_bindings = 1
-"
+let g:codeium_disable_bindings = 1
+imap <script><silent><nowait><expr> <leader>ai codeium#Accept()
+imap <leader>an <Cmd>call codeium#CycleCompletions(1)<CR>
+imap <leader>ap <Cmd>call codeium#CycleCompletions(-1)<CR>
+imap <leader>ac <Cmd>call codeium#Clear()<CR>
+
 
 " getx-template.vim
 let g:getx_templates_path=$PLUGGED.'/getx-template.vim/templates/'

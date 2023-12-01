@@ -57,7 +57,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'sirver/ultisnips'
 
 " Plug 'github/copilot.vim'
-Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
+Plug 'Exafunction/codeium.vim'
 
 Plug 'adelarsq/vim-matchit'
 

@@ -572,3 +572,6 @@ highlight GitGutterAdd    guifg=#00FF00 ctermfg=2 gui=bold
 highlight GitGutterChange guifg=#037797 ctermfg=3 gui=bold
 highlight GitGutterDelete guifg=#FF5F87 ctermfg=1 gui=bold
 highlight GitGutterChangeDeleteLineNr guifg=#FFFFFF ctermfg=4 gui=bold
+
+" codeium
+highlight CodeiumSuggestion guifg=#49af47 ctermfg=8
