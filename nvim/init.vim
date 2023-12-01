@@ -31,6 +31,7 @@ let $PLUGIN = g:vim_conf_path . '/conf/plugin.vim'
 " third party app
 let $AJAXMIN = g:vim_conf_path . '/../third_party/AjaxMin/AjaxMin.exe'
 
+let g:python3_host_prog = 'D:\Python\Python310\python.exe'
 
 " set leader 
 let mapleader=","
