@@ -10,11 +10,11 @@ git clone git@github.com:katosun2/nvim.git config
 
 ## 环境配置
 // 配置neovim调用的config
-export XDG_CONFIG_HOME=D:\Neovim\share\config
-export XDG_DATA_HOME=D:\Neovim\share\config
-export path+=D:\Neovim\share\config\third_party\bin
+export XDG_CONFIG_HOME=D:\nvim\share\config
+export XDG_DATA_HOME=D:\nvim\share\config
+export path+=D:\nvim\share\config\third_party\bin
 
-export path+=D:\Neovim\bin
+export path+=D:\nvim\bin
 ```
 
 ```
