@@ -17,6 +17,28 @@ export path+=D:\nvim\share\config\third_party\bin
 export path+=D:\nvim\bin
 ```
 
+``vi nvim/init.vim`` 按需修改配置
+
+```
+" https://neovim.io/doc/user/provider.html
+let g:ruby_host_prog = ''
+let g:loaded_ruby_provider = 0
+
+let g:perl_host_prog = ''
+let g:loaded_perl_provider = 0
+
+let g:python_host_prog = 'Python2'
+let g:loaded_python_provider = 0
+
+let g:python3_host_prog = 'D:\Python\Python310\python.exe'
+" let g:loaded_python3_provider = 0
+
+let g:node_host_prog = 'D:\work\nodejs\18.x\node_modules\neovim\bin\cli.js'
+let g:coc_node_path = 'D:\work\nodejs\18.x\node.exe'
+" let g:loaded_node_provider = 0
+```
+
+## flutter 环境配置
 ```
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
@@ -25,6 +47,9 @@ export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 export path+=D:\flutter\bin\cache\dart-sdk\bin
 export path+=D:\flutter\bin
 
+## node 安装
+
+下载 https://mirrors.aliyun.com/nodejs-release/
 
 ## python3 安装
 ```
