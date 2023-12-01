@@ -241,6 +241,9 @@ nnoremap <leader>ca <Cmd>lua vim.lsp.buf.code_action()<CR>
 " Open code actions for the selected visual range
 xnoremap <leader>ca <Cmd>lua vim.lsp.buf.range_code_action()<CR>
 
+" codeium
+" let g:codeium_disable_bindings = 1
+"
 
 " getx-template.vim
 let g:getx_templates_path=$PLUGGED.'/getx-template.vim/templates/'
