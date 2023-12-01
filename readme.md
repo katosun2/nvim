@@ -26,7 +26,9 @@ export path+=D:\Neovim\bin
 
 ## python3 安装
 ```
-pip install neovim
+let g:python3_host_prog = 'D:\Python\Python310\python.exe'
+python.exe -m ensurepip --upgrade
+python.exe -m pip install pynvim
 ```
 
 
