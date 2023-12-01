@@ -560,7 +560,7 @@ hi User5 guifg=#952121 guibg=#C2BFA5 gui=bold
 hi User6 guifg=#960066 guibg=#C2BFA5 gui=bold
 hi User7 guifg=#4386C7 guibg=#413C41 gui=bold
 hi User8 guifg=#413c41 guibg=#C2BFA5 gui=bold
-hi User9 guifg=#4386C7 guibg=#413C41 gui=bold
+hi User9 guifg=#39c5bb guibg=#413C41 gui=bold
 hi StatusLine guifg=#000000 guibg=#C2BFA5
 hi StatusLineNC guifg=#CCCCCC guibg=#413C41 
 
