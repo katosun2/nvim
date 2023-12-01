@@ -34,6 +34,9 @@ let g:loaded_ruby_provider = 0
 let g:perl_host_prog = ''
 let g:loaded_perl_provider = 0
 
+let g:python_host_prog = 'Python2'
+let g:loaded_python_provider = 0
+
 let g:python3_host_prog = 'D:\Python\Python310\python.exe'
 " let g:loaded_python3_provider = 0
 
