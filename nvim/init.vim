@@ -10,7 +10,6 @@ let $BACKUPCACHE = $CACHE . '/backup'
 let $SWPCACHE = $CACHE . '/swp'
 let $VIEWCACHE = $CACHE . '/view'
 let $MRU = $CACHE . '/mru'
-" let g:python3_host_prog =
 
 " set brwosers
 let $BROWSERS = g:vim_conf_path . '/../browsers'
@@ -28,11 +27,23 @@ let $PLUGLIST = g:vim_conf_path . '/conf/plugList.vim'
 " plugin setting
 let $PLUGIN = g:vim_conf_path . '/conf/plugin.vim'
 
+" https://neovim.io/doc/user/provider.html
+let g:ruby_host_prog = ''
+let g:loaded_ruby_provider = 0
+
+let g:perl_host_prog = ''
+let g:loaded_perl_provider = 0
+
+let g:python3_host_prog = 'D:\Python\Python310\python.exe'
+" let g:loaded_python3_provider = 0
+
+let g:node_host_prog = 'D:\work\nodejs\18.x\node_modules\neovim\bin\cli.js'
+let g:coc_node_path = 'D:\work\nodejs\18.x\node.exe'
+" let g:loaded_node_provider = 0
+
 
 " third party app
 let $AJAXMIN = g:vim_conf_path . '/../third_party/AjaxMin/AjaxMin.exe'
-
-let g:python3_host_prog = 'D:\Python\Python310\python.exe'
 
 " set leader 
 let mapleader=","
@@ -227,6 +238,12 @@ source $FUNCS
 source $PLUGIN
 
 " load lspconfig
-lua require('lsp')
+" lua/lsp/目录名称
+" require('文件夹1.文件夹2.文件名(默认init.lua)')
+lua require('lsp.init')
+
+" check :lua= vim.lsp
+" check :lua= vim.lsp.log_levels
+lua require('vim.lsp').set_log_level(4)
 
 " vim: set et fdm=marker ff=dos sts=2 sw=2 ts=2 tw=78 : 
