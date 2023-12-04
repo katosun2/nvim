@@ -37,7 +37,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'mattn/webapi-vim'
 Plug 'mxw/vim-jsx'
 
-# install and download fzf
+" install and download fzf
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
