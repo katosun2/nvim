@@ -67,4 +67,7 @@ Plug 'neovim/nvim-lspconfig'
 " Use release branch (recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" focus.vim
+Plug 'nvim-focus/focus.nvim'
+
 call plug#end()
