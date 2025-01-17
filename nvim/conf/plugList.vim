@@ -71,6 +71,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " focus.vim
 Plug 'nvim-focus/focus.nvim'
 
-" Plug 'nanozuki/tabby.nvim'
+Plug 'nanozuki/tabby.nvim'
 
 call plug#end()
