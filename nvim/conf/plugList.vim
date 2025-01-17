@@ -39,8 +39,10 @@ Plug 'mattn/webapi-vim'
 Plug 'mxw/vim-jsx'
 
 " install and download fzf
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() }, 'branch': 'master', 'commit': 'ed8ceec66f2a3fd380acfb1e181b260cd21b8c5f' }
+" Plug 'junegunn/fzf.vim', { 'branch': 'master', 'commit': '556f45e79ae5e3970054fee4c4373472604a1b4e' }
+Plug 'katosun2/fzf', { 'do': { -> fzf#install() }, 'branch': 'master', 'commit': 'ed8ceec66f2a3fd380acfb1e181b260cd21b8c5f' }
+Plug 'katosun2/fzf.vim', { 'branch': 'master', 'commit': '556f45e79ae5e3970054fee4c4373472604a1b4e' }
 
 " manual install npm install 
 "Plug 'ternjs/tern_for_vim'
