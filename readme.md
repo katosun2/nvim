@@ -22,7 +22,7 @@ export path+=D:\nvim\share\config\third_party\bin
 export path+=D:\nvim\bin
 ```
 
-``vi nvim/init.vim`` 按需修改配置
+``vi nvim/init.vim`` 按需修改配置否则无法运行 checkhealth
 
 ```
 " https://neovim.io/doc/user/provider.html
