@@ -30,7 +30,8 @@ Plug 'ynkdir/vim-iconv'
 " Plug 'Shougo/vimproc.vim'
 " Plug 'Shougo/vimshell.vim'
 
-Plug 'scrooloose/syntastic'
+" Plug 'scrooloose/syntastic'
+Plug 'katosun2/syntastic'
 
 Plug 'leafgarland/typescript-vim'
 Plug 'pangloss/vim-javascript'
@@ -44,7 +45,8 @@ Plug 'junegunn/fzf.vim'
 " manual install npm install 
 "Plug 'ternjs/tern_for_vim'
 " manual install make js 
-Plug 'maralla/completor.vim'
+" Plug 'maralla/completor.vim'
+Plug 'katosun2/completor.vim'
 
 Plug 'skywind3000/asyncrun.vim'
 
@@ -52,21 +54,27 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
 Plug 'vim-scripts/DoxygenToolkit.vim'
-Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/nerdcommenter'
-Plug 'sirver/ultisnips'
+" Plug 'scrooloose/nerdtree'
+Plug 'katosun2/nerdtree'
+" Plug 'scrooloose/nerdcommenter'
+Plug 'katosun2/nerdcommenter'
+" Plug 'sirver/ultisnips'
+Plug 'katosun2/ultisnips'
 
 " Plug 'github/copilot.vim'
 " if codeium not work, delete ~/.codeium
-Plug 'Exafunction/codeium.vim', {'branch': 'main', 'commit': '5644ac5a0e098ca0cf5deed1c909c3fa5e9901f3'}
+" Plug 'Exafunction/codeium.vim', {'branch': 'main', 'commit': '5644ac5a0e098ca0cf5deed1c909c3fa5e9901f3'}
+Plug 'katosun2/codeium.vim', {'branch': 'main', 'commit': '5644ac5a0e098ca0cf5deed1c909c3fa5e9901f3'}
 
 Plug 'adelarsq/vim-matchit'
 
 " 会和 vim-copilot 冲突
-Plug 'neovim/nvim-lspconfig'
+" Plug 'neovim/nvim-lspconfig'
+Plug 'katosun2/nvim-lspconfig', {'branch': 'master', 'commit': '339ccc81e08793c3af9b83882a6ebd90c9cc0d3b'}
 
 " Use release branch (recommend)
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'katosun2/coc.nvim', {'branch': 'release', 'commit': '4cc169449fa6fd69e5f5f0a67bda8fd74837f924'}
 
 " focus.vim
 Plug 'nvim-focus/focus.nvim'
