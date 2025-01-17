@@ -1,0 +1,154 @@
+==============================================================================
+coc: health#coc#check
+
+- OK nvim version satisfied
+- OK Environment check passed
+- OK Javascript bundle build/index.js found
+- OK Service started
+
+==============================================================================
+lspconfig: require("lspconfig.health").check()
+
+LSP configs active in this session (globally) ~
+- Configured servers: cssmodules_ls, yamlls, jsonls, html, cssls, vimls, dockerls, vuels, dartls, ts_ls
+- OK Deprecated servers: (none)
+
+LSP configs active in this buffer (bufnr: 5) ~
+- Language client log: ~\AppData\Local\nvim-data\lsp.log
+- Detected filetype: `vim`
+- 1 client(s) attached to this buffer
+- Client: `vimls` (id: 2, bufnr: [5])
+  root directory:    D:/nvim/share/config/
+  filetypes:         vim
+  cmd:               D:\work\nodejs\vim-language-server.CMD --stdio
+  version:           `?` (Failed to get version) Tried:
+  `D:\work\nodejs\vim-language-server.CMD --version`
+  `D:\work\nodejs\vim-language-server.CMD -version`
+  `D:\work\nodejs\vim-language-server.CMD version`
+  `D:\work\nodejs\vim-language-server.CMD --help`
+  
+  executable:        true
+  autostart:         true
+- 1 active client(s) not attached to this buffer:
+- Client: `vuels` (id: 1, bufnr: [])
+  root directory:    d:/work/meetIM/web/
+  filetypes:         vue
+  cmd:               D:\work\nodejs\vls.CMD
+  version:           `?` (Failed to get version) Tried:
+  `D:\work\nodejs\vls.CMD --version`
+  `D:\work\nodejs\vls.CMD -version`
+  `D:\work\nodejs\vls.CMD version`
+  `D:\work\nodejs\vls.CMD --help`
+  
+  executable:        true
+  autostart:         true
+
+Docs for active configs: ~
+- vimls docs: >markdown
+  
+  https://github.com/iamcco/vim-language-server
+  
+  You can install vim-language-server via npm:
+  ```sh
+  npm install -g vim-language-server
+  ```
+  
+  
+
+==============================================================================
+nvim: require("nvim.health").check()
+
+Configuration ~
+- OK no issues found
+
+Runtime ~
+- OK $VIMRUNTIME: D:\nvim\share/nvim/runtime
+
+Performance ~
+- OK Build type: Release
+  LuaJIT
+
+Remote Plugins ~
+- OK Up to date
+
+External Tools ~
+- OK ripgrep 13.0.0 (D:\nvim\share\config\third_party\bin\rg.EXE)
+
+==============================================================================
+provider.clipboard: require("provider.clipboard.health").check()
+
+Clipboard (optional) ~
+- OK Clipboard tool found: win32yank
+
+==============================================================================
+provider.node: require("provider.node.health").check()
+
+Node.js provider (optional) ~
+- Node.js: v18.16.0
+  
+- Nvim node.js host: D:\work\nodejs\18.x\node_modules\neovim\bin\cli.js
+- OK Latest "neovim" npm/yarn/pnpm package is installed: 4.10.1
+  
+
+==============================================================================
+provider.perl: require("provider.perl.health").check()
+
+Perl provider (optional) ~
+- Disabled (loaded_perl_provider=0).
+
+==============================================================================
+provider.python: require("provider.python.health").check()
+
+Python 3 provider (optional) ~
+- Using: g:python3_host_prog = "D:\Python\Python310\python.exe"
+- Executable: D:\Python\Python310\python.exe
+- Python version: 3.10.11
+- pynvim version: 0.5.0
+- OK Latest pynvim is installed.
+
+Python virtualenv ~
+- OK no $VIRTUAL_ENV
+
+==============================================================================
+provider.ruby: require("provider.ruby.health").check()
+
+Ruby provider (optional) ~
+- Disabled (loaded_ruby_provider=0).
+
+==============================================================================
+vim.lsp: require("vim.lsp.health").check()
+
+- LSP log level : ERROR
+- Log path: C:\Users\Ryu\AppData\Local\nvim-data/lsp.log
+- Log size: 4 KB
+
+vim.lsp: Active Clients ~
+- vuels (id: 1)
+    Root directory: d:/work/meetIM/web
+    Command: D:\work\nodejs\vls.CMD
+    Settings: vim.empty_dict()
+    Attached buffers: 
+- vimls (id: 2)
+    Root directory: D:/nvim/share/config
+    Command: D:\work\nodejs\vim-language-server.CMD --stdio
+    Settings: vim.empty_dict()
+    Attached buffers: 5
+
+vim.lsp: File Watcher ~
+- file watching "(workspace/didChangeWatchedFiles)" disabled on all clients
+
+vim.lsp: Position Encodings ~
+- No buffers contain mixed position encodings
+
+==============================================================================
+vim.treesitter: require("vim.treesitter.health").check()
+
+- Nvim runtime ABI version: 14
+- OK Parser: c                    ABI: 14, path: D:\nvim\lib\nvim\parser\c.dll
+- OK Parser: lua                  ABI: 14, path: D:\nvim\lib\nvim\parser\lua.dll
+- OK Parser: markdown             ABI: 14, path: D:\nvim\lib\nvim\parser\markdown.dll
+- OK Parser: markdown_inline      ABI: 14, path: D:\nvim\lib\nvim\parser\markdown_inline.dll
+- OK Parser: query                ABI: 14, path: D:\nvim\lib\nvim\parser\query.dll
+- OK Parser: vim                  ABI: 14, path: D:\nvim\lib\nvim\parser\vim.dll
+- OK Parser: vimdoc               ABI: 14, path: D:\nvim\lib\nvim\parser\vimdoc.dll
+

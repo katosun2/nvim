@@ -243,6 +243,7 @@ xnoremap <leader>ca <Cmd>lua vim.lsp.buf.range_code_action()<CR>
 
 " codeium
 let g:codeium_disable_bindings = 1
+let g:codeium_enabled = v:true
 imap <script><silent><nowait><expr> <leader>ai codeium#Accept()
 imap <leader>an <Cmd>call codeium#CycleCompletions(1)<CR>
 imap <leader>ap <Cmd>call codeium#CycleCompletions(-1)<CR>

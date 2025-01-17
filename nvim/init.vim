@@ -131,7 +131,8 @@ set report=0
 
 " set font
 "set guifont=Consolas:h17:cANSI
-au vimEnter * Guifont Consolas:h17:cANSI
+" au vimEnter * Guifont Consolas:h17:cANSI
+au vimEnter * Guifont! Consolas:h17
 
 " set color
 color jellybeans

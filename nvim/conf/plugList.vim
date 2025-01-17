@@ -57,7 +57,8 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'sirver/ultisnips'
 
 " Plug 'github/copilot.vim'
-Plug 'Exafunction/codeium.vim'
+" if codeium not work, delete ~/.codeium
+Plug 'Exafunction/codeium.vim', {'branch': 'main', 'commit': '5644ac5a0e098ca0cf5deed1c909c3fa5e9901f3'}
 
 Plug 'adelarsq/vim-matchit'
 
@@ -69,5 +70,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " focus.vim
 Plug 'nvim-focus/focus.nvim'
+
+" Plug 'nanozuki/tabby.nvim'
 
 call plug#end()

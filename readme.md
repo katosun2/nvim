@@ -1,5 +1,10 @@
 ## 安装目录
 
+## 版本
+
+neovim: 0.10.3
+
+
 ```
 cd /nvim/share/
 git clone git@github.com:katosun2/nvim.git config
