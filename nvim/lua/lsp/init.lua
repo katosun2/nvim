@@ -9,5 +9,5 @@ require'lspconfig'.yamlls.setup{}
 require'lspconfig'.jsonls.setup{}
 require'lspconfig'.dockerls.setup{}
 require'lspconfig'.vimls.setup{}
-require'lspconfig'.tabby_ml.setup{}
+-- require'lspconfig'.tabby_ml.setup{}
 --require("flutter-tools").setup{}

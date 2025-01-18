@@ -81,6 +81,6 @@ Plug 'katosun2/coc.nvim', {'branch': 'release', 'commit': '4cc169449fa6fd69e5f5f
 " focus.vim
 Plug 'nvim-focus/focus.nvim'
 
-Plug 'nanozuki/tabby.nvim', {'branch': 'main'}
+" Plug 'nanozuki/tabby.nvim', {'branch': 'main'}
 
 call plug#end()
