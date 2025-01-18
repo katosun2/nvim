@@ -261,8 +261,4 @@ let g:fish_redux_templates_path=$PLUGGED.'/fish-redux-template.vim/templates/'
 let g:asyncrun_open = 8
 let g:asyncrun_encs='cp936'
 
-" vim-tabby
-" let g:tabby_agent_start_command = {'npx', 'tabby-agent', '--stdio'}
-let g:tabby_inline_completion_trigger = "auto"
-
 " vim: set noet fdm=manual ff=dos sts=2 sw=2 ts=2 tw=78 : 

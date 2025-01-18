@@ -40,8 +40,8 @@ let g:loaded_python_provider = 0
 let g:python3_host_prog = 'D:\Python\Python310\python.exe'
 " let g:loaded_python3_provider = 0
 
-let g:node_host_prog = 'D:\work\nodejs\18.x\node_modules\neovim\bin\cli.js'
-let g:coc_node_path = 'D:\work\nodejs\18.x\node.exe'
+let g:node_host_prog = 'D:\nodejs\node_modules\neovim\bin\cli.js'
+let g:coc_node_path = 'D:\nodejs\node.exe'
 " let g:loaded_node_provider = 0
 
 
