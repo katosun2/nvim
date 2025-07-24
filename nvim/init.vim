@@ -40,8 +40,10 @@ let g:loaded_python_provider = 0
 let g:python3_host_prog = 'D:\Python\Python310\python.exe'
 " let g:loaded_python3_provider = 0
 
-let g:node_host_prog = 'D:\nodejs\node_modules\neovim\bin\cli.js'
-let g:coc_node_path = 'D:\nodejs\node.exe'
+" let g:node_host_prog = 'd:\work\nodejs\18.x\node_modules\neovim\bin\cli.js'
+" let g:coc_node_path = 'd:\work\nodejs\18.x\node.exe'
+let g:node_host_prog = 'd:\work\nodejs\node_modules\neovim\bin\cli.js'
+let g:coc_node_path = 'd:\work\nodejs\node.exe'
 " let g:loaded_node_provider = 0
 
 
@@ -132,7 +134,7 @@ set report=0
 " set font
 "set guifont=Consolas:h17:cANSI
 " au vimEnter * Guifont Consolas:h17:cANSI
-au vimEnter * Guifont! Consolas:h17
+au vimEnter * Guifont! Consolas:h22
 
 " set color
 color jellybeans

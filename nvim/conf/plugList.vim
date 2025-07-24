@@ -66,7 +66,8 @@ Plug 'katosun2/ultisnips'
 " Plug 'github/copilot.vim'
 " if codeium not work, delete ~/.codeium
 " Plug 'Exafunction/codeium.vim', {'branch': 'main', 'commit': '5644ac5a0e098ca0cf5deed1c909c3fa5e9901f3'}
-Plug 'katosun2/codeium.vim', {'branch': 'main', 'commit': '5644ac5a0e098ca0cf5deed1c909c3fa5e9901f3'}
+" Plug 'katosun2/codeium.vim', {'branch': 'main', 'commit': '5644ac5a0e098ca0cf5deed1c909c3fa5e9901f3'}
+Plug 'Exafunction/windsurf.vim'
 
 Plug 'adelarsq/vim-matchit'
 
