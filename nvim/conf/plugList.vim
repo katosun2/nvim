@@ -83,7 +83,8 @@ Plug 'adelarsq/vim-matchit'
 
 " 会和 vim-copilot 冲突
 " Plug 'neovim/nvim-lspconfig'
-Plug 'katosun2/nvim-lspconfig', {'branch': 'master', 'commit': '339ccc81e08793c3af9b83882a6ebd90c9cc0d3b'}
+" Plug 'katosun2/nvim-lspconfig', {'branch': 'master', 'commit': '339ccc81e08793c3af9b83882a6ebd90c9cc0d3b'}
+Plug 'katosun2/nvim-lspconfig'
 
 " Use release branch (recommend)
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
