@@ -2,7 +2,9 @@
 
 ## 版本
 
-neovim: 0.10.3
+neovim: 0.11.3
+neovim-qt: [0.2.19](https://github.com/equalsraf/neovim-qt)
+gui: https://neovim.io/doc/user/gui.html
 
 
 ```
