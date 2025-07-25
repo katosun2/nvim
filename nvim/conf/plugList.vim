@@ -87,7 +87,8 @@ Plug 'katosun2/nvim-lspconfig', {'branch': 'master', 'commit': '339ccc81e08793c3
 
 " Use release branch (recommend)
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'katosun2/coc.nvim', {'branch': 'release', 'commit': '4cc169449fa6fd69e5f5f0a67bda8fd74837f924'}
+Plug 'katosun2/coc.nvim'
+" Plug 'katosun2/coc.nvim', {'branch': 'release', 'commit': '4cc169449fa6fd69e5f5f0a67bda8fd74837f924'}
 
 " focus.vim
 Plug 'nvim-focus/focus.nvim'
