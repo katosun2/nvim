@@ -1,5 +1,6 @@
 " vim-plug 插件
 call plug#begin($PLUGGED) 
+" let g:plug_url_format = 'git@github.com:%s.git'
 
 Plug 'junegunn/vim-easy-align'
 
@@ -64,10 +65,19 @@ Plug 'katosun2/nerdcommenter'
 Plug 'katosun2/ultisnips'
 
 " Plug 'github/copilot.vim'
-" if codeium not work, delete ~/.codeium
-" Plug 'Exafunction/codeium.vim', {'branch': 'main', 'commit': '5644ac5a0e098ca0cf5deed1c909c3fa5e9901f3'}
-" Plug 'katosun2/codeium.vim', {'branch': 'main', 'commit': '5644ac5a0e098ca0cf5deed1c909c3fa5e9901f3'}
-Plug 'Exafunction/windsurf.vim'
+
+
+" Plug 'nomnivore/ollama.nvim'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp'
+" Plug 'hrsh7th/cmp-buffer'
+" Plug 'hrsh7th/cmp-path'
+" Plug 'hrsh7th/cmp-cmdline'
+
+Plug 'nvim-treesitter/nvim-treesitter'
+
+" Plug 'olimorris/codecompanion.nvim'
+Plug 'David-Kunz/gen.nvim'
 
 Plug 'adelarsq/vim-matchit'
 
@@ -82,6 +92,7 @@ Plug 'katosun2/coc.nvim', {'branch': 'release', 'commit': '4cc169449fa6fd69e5f5f
 " focus.vim
 Plug 'nvim-focus/focus.nvim'
 
-" Plug 'nanozuki/tabby.nvim', {'branch': 'main'}
-
+" if codeium not work, delete ~/.codeium
+" Plug 'Exafunction/windsurf.vim'
+Plug 'katosun2/codeium.vim'
 call plug#end()
