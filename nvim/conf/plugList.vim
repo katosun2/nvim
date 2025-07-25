@@ -74,7 +74,7 @@ Plug 'katosun2/ultisnips'
 " Plug 'hrsh7th/cmp-path'
 " Plug 'hrsh7th/cmp-cmdline'
 
-Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'nvim-treesitter/nvim-treesitter', {'branch': 'main'}
 
 " Plug 'olimorris/codecompanion.nvim'
 Plug 'David-Kunz/gen.nvim'
