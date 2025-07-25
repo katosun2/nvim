@@ -1,3 +1,5 @@
+:: ÉèÖÃ±àÂë
+chcp 65001
 @echo off
 
 set curpath=%~dp0
