@@ -7,6 +7,9 @@ neovim-qt: [0.2.19](https://github.com/equalsraf/neovim-qt)
 gui: https://neovim.io/doc/user/gui.html
 
 
+npm install tree-sitter-vue tree-sitter -g
+npm install -g tree-sitter-cli
+
 ```
 cd /nvim/share/
 git clone git@github.com:katosun2/nvim.git config

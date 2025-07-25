@@ -57,10 +57,10 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
 Plug 'vim-scripts/DoxygenToolkit.vim'
-" Plug 'scrooloose/nerdtree'
-Plug 'katosun2/nerdtree'
-" Plug 'scrooloose/nerdcommenter'
-Plug 'katosun2/nerdcommenter'
+Plug 'preservim/nerdtree', {'branch': 'master', 'commit': '9b465acb2745beb988eff3c1e4aa75f349738230'}
+" Plug 'katosun2/nerdtree'
+Plug 'preservim/nerdcommenter', {'branch': 'master', 'commit': '02a3b6455fa07b61b9440a78732f1e9b7876c991'}
+" Plug 'katosun2/nerdcommenter'
 " Plug 'sirver/ultisnips'
 Plug 'katosun2/ultisnips'
 
