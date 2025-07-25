@@ -49,7 +49,7 @@ Plug 'katosun2/fzf.vim', { 'branch': 'master', 'commit': '556f45e79ae5e3970054fe
 "Plug 'ternjs/tern_for_vim'
 " manual install make js 
 " Plug 'maralla/completor.vim'
-Plug 'katosun2/completor.vim'
+" Plug 'katosun2/completor.vim'
 
 Plug 'skywind3000/asyncrun.vim'
 
@@ -68,8 +68,8 @@ Plug 'katosun2/ultisnips'
 
 
 " Plug 'nomnivore/ollama.nvim'
-Plug 'hrsh7th/nvim-cmp'
-Plug 'hrsh7th/cmp-nvim-lsp'
+" Plug 'hrsh7th/nvim-cmp'
+" Plug 'hrsh7th/cmp-nvim-lsp'
 " Plug 'hrsh7th/cmp-buffer'
 " Plug 'hrsh7th/cmp-path'
 " Plug 'hrsh7th/cmp-cmdline'

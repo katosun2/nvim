@@ -243,13 +243,14 @@ xnoremap <leader>ca <Cmd>lua vim.lsp.buf.range_code_action()<CR>
 
 " codeium
 let g:codeium_disable_bindings = 1
-let g:codeium_enabled = v:true
-let g:codeium_idle_delay = 200
-imap <script><silent><nowait><expr> <leader>ai codeium#Accept()
+" let g:codeium_enabled = v:true
+let g:codeium_manual = v:true
+" let g:codeium_idle_delay = 200
+imap <leader>aa <Cmd>call codeium#Complete()<CR>
 imap <leader>an <Cmd>call codeium#CycleCompletions(1)<CR>
 imap <leader>ap <Cmd>call codeium#CycleCompletions(-1)<CR>
 imap <leader>ac <Cmd>call codeium#Clear()<CR>
-
+imap <script><silent><nowait><expr> <leader>ai codeium#Accept()
 
 " getx-template.vim
 let g:getx_templates_path=$PLUGGED.'/getx-template.vim/templates/'
