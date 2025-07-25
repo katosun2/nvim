@@ -95,4 +95,5 @@ Plug 'nvim-focus/focus.nvim'
 " if codeium not work, delete ~/.codeium
 " Plug 'Exafunction/windsurf.vim'
 Plug 'katosun2/codeium.vim'
+" Plug 'katosun2/codeium.vim', {'branch': 'feature/ollama'}
 call plug#end()
