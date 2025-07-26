@@ -15,7 +15,7 @@ vim.opt.runtimepath:prepend(parser_dir)
 require('nvim-treesitter.configs').setup {
   parser_install_dir = parser_dir,
   highlight = {
-    enable = true,
+    enable = true, -- if not set true, vue not work
   },
   indent = {
     enable = false,
