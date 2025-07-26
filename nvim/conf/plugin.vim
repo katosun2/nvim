@@ -48,41 +48,9 @@ map <leader>my <ESC>:AuthorInfoDetect<cr>
 imap <leader>my <ESC>:AuthorInfoDetect<cr>   
 
 
-" NERD_commenter
-" 取消默认的注释模式
-let g:NERDCreateDefaultMappings=0
-" 默认情况下，在注释分隔符后添加空格
-let g:NERDSpaceDelims = 1
-" 支持多行注释
-let g:NERDCompactSexyComs = 1                     
-" 按行对齐注释分隔符左对齐，而不是按代码缩进
-let g:NERDDefaultAlign = 'left'
-" 允许注释和反转空行（在注释区域时很有用） 
-let g:NERDCommentEmptyLines = 1
-" 取消注释时启用尾随空白的修剪
-let g:NERDTrimTrailingWhitespace = 1
-" 启用nerdcommenttoggle检查是否对所有选定行进行了注释
-let g:NERDToggleCheckAllLines = 1
-"自定义注释格式
-let g:NERDCustomDelimiters={
-			\ 'javascript': { 'left': '// ', 'leftAlt': '/* ', 'rightAlt': ' */' },
-			\ 'css': { 'leftAlt': '/* ', 'rightAlt': ' */' },
-			\ 'html': { 'left': '<!-- ', 'right': ' -->' }
-			\ }
-map <silent> <leader>cc <plug>NERDCommenterComment
-"\cu取消当前行或选中行注释。
-map <silent> <leader>cu <plug>NERDCommenterUncomment
-"\c<space>当前或选中行中含有未注释的行，则都添加注释，都已注释则取消注释。
-map <silent> <leader>c<space> <plug>NERDCommenterToggle
-"\ci反转当前或选中行注释。
-map <silent> <leader>ci <plug>NERDCommenterInvert
-"\c$从光标位置（包括光标下的字符）注释到行末。
-map <silent> <leader>c$ <plug>NERDCommenterToEOL
-"\cA在行末添加注释并进入插入模式。
-map <silent> <leader>cA <plug>NERDCommenterAppend
-"\ca转换注释格式，比如//和/**/。
-map <silent> <leader>ca <plug>NERDCommenterAltDelims
-
+" Comment.nvim
+map <silent> <leader>cc gcc
+map <silent> <leader>bc gbc
   
 " fencview
 let g:fencview_autodetect=0

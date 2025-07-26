@@ -42,8 +42,8 @@ let g:python3_host_prog = 'D:\Python\Python310\python.exe'
 
 " let g:node_host_prog = 'd:\work\nodejs\18.x\node_modules\neovim\bin\cli.js'
 " let g:coc_node_path = 'd:\work\nodejs\18.x\node.exe'
-let g:node_host_prog = 'd:\work\nodejs\node_modules\neovim\bin\cli.js'
-let g:coc_node_path = 'd:\work\nodejs\node.exe'
+let g:node_host_prog = 'D:\tool\nodejs\node_modules\neovim\bin\cli.js'
+let g:coc_node_path = 'D:\tool\nodejs\node.exe'
 " let g:loaded_node_provider = 0
 
 
@@ -247,9 +247,11 @@ source $PLUGIN
 " lua/lsp/目录名称
 " require('文件夹1.文件夹2.文件名(默认init.lua)')
 lua require('lsp.init')
+lua require('vim.comment')
+lua require('vim.gen')
 
 " check :lua= vim.lsp
 " check :lua= vim.lsp.log_levels
-lua require('vim.lsp').set_log_level(4)
+" lua require('vim.init').set_log_level(4)
 
 " vim: set et fdm=marker ff=dos sts=2 sw=2 ts=2 tw=78 : 

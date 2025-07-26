@@ -47,49 +47,34 @@ Plug 'katosun2/fzf.vim', { 'branch': 'master', 'commit': '556f45e79ae5e3970054fe
 
 " manual install npm install 
 "Plug 'ternjs/tern_for_vim'
-" manual install make js 
-" Plug 'maralla/completor.vim'
-" Plug 'katosun2/completor.vim'
-
-Plug 'skywind3000/asyncrun.vim'
 
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
 Plug 'vim-scripts/DoxygenToolkit.vim'
 Plug 'preservim/nerdtree', {'branch': 'master', 'commit': '9b465acb2745beb988eff3c1e4aa75f349738230'}
-" Plug 'katosun2/nerdtree'
-Plug 'preservim/nerdcommenter', {'branch': 'master', 'commit': '02a3b6455fa07b61b9440a78732f1e9b7876c991'}
-" Plug 'katosun2/nerdcommenter'
-" Plug 'sirver/ultisnips'
-Plug 'katosun2/ultisnips'
+
+" Plug 'sirver/ultisnips', {'branch': 'master', 'commit': 'b22a86f9dcc5257624bff3c72d8b902eac468aad'}
+Plug 'katosun2/ultisnips', {'branch': 'master', 'commit': 'b22a86f9dcc5257624bff3c72d8b902eac468aad'}
 
 " Plug 'github/copilot.vim'
 
-
-" Plug 'nomnivore/ollama.nvim'
-" Plug 'hrsh7th/nvim-cmp'
-" Plug 'hrsh7th/cmp-nvim-lsp'
-" Plug 'hrsh7th/cmp-buffer'
-" Plug 'hrsh7th/cmp-path'
-" Plug 'hrsh7th/cmp-cmdline'
-
-Plug 'nvim-treesitter/nvim-treesitter', {'branch': 'main'}
+Plug 'nvim-treesitter/nvim-treesitter', {'branch': 'master', 'do': ':TSUpdate', 'commit': '42fc28ba918343ebfd5565147a42a26580579482'}
+Plug 'numToStr/Comment.nvim', {'branch': 'master', 'commit': 'e30b7f2008e52442154b66f7c519bfd2f1e32acb'}
+" Plug 'JoosepAlviste/nvim-ts-context-commentstring', {'branch': 'main', 'commit': '1b212c2eee76d787bbea6aa5e92a2b534e7b4f8f'}
+Plug 'katosun2/nvim-ts-context-commentstring', {'branch': 'main', 'commit': '1b212c2eee76d787bbea6aa5e92a2b534e7b4f8f'}
 
 " Plug 'olimorris/codecompanion.nvim'
 Plug 'David-Kunz/gen.nvim'
 
-Plug 'adelarsq/vim-matchit'
-
 " 会和 vim-copilot 冲突
-" Plug 'neovim/nvim-lspconfig'
-" Plug 'katosun2/nvim-lspconfig', {'branch': 'master', 'commit': '339ccc81e08793c3af9b83882a6ebd90c9cc0d3b'}
-Plug 'katosun2/nvim-lspconfig'
+" Plug 'neovim/nvim-lspconfig', {'branch': 'master', 'commit': '4d3b3bb8815fbe37bcaf3dbdb12a22382bc11ebe'}
+Plug 'katosun2/nvim-lspconfig', {'branch': 'master', 'commit': '4d3b3bb8815fbe37bcaf3dbdb12a22382bc11ebe'}
 
 " Use release branch (recommend)
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'katosun2/coc.nvim'
-" Plug 'katosun2/coc.nvim', {'branch': 'release', 'commit': '4cc169449fa6fd69e5f5f0a67bda8fd74837f924'}
+" Manual install npm install 
+" Plug 'neoclide/coc.nvim', {'branch': 'release', 'commit': '29774cf47307a39a0d5c667068c377cef2253eea'}
+Plug 'katosun2/coc.nvim', {'branch': 'release', 'commit': '29774cf47307a39a0d5c667068c377cef2253eea'}
 
 " focus.vim
 Plug 'nvim-focus/focus.nvim'
@@ -97,5 +82,5 @@ Plug 'nvim-focus/focus.nvim'
 " if codeium not work, delete ~/.codeium
 " Plug 'Exafunction/windsurf.vim'
 Plug 'katosun2/codeium.vim'
-" Plug 'katosun2/codeium.vim', {'branch': 'feature/ollama'}
+
 call plug#end()

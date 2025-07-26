@@ -5,10 +5,9 @@
 neovim: 0.11.3
 neovim-qt: [0.2.19](https://github.com/equalsraf/neovim-qt)
 gui: https://neovim.io/doc/user/gui.html
+node: 20.18.3
 
-
-npm install tree-sitter-vue tree-sitter -g
-npm install -g tree-sitter-cli
+npm install tree-sitter@0.25.0 tree-sitter-cli@0.25.8 -g
 
 ```
 cd /nvim/share/
@@ -20,11 +19,11 @@ git clone git@github.com:katosun2/nvim.git config
 
 ## 环境配置
 // 配置neovim调用的config
-export XDG_CONFIG_HOME=D:\nvim\share\config
-export XDG_DATA_HOME=D:\nvim\share\config
-export path+=D:\nvim\share\config\third_party\bin
+export XDG_CONFIG_HOME=D:\nvim-win64\share\config
+export XDG_DATA_HOME=D:\nvim-win64\share\config
+export path+=D:\nvim-win64\share\config\third_party\bin
 
-export path+=D:\nvim\bin
+export path+=D:\nvim-win64\bin
 ```
 
 ``vi nvim/init.vim`` 按需修改配置否则无法运行 checkhealth
