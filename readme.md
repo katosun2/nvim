@@ -8,8 +8,9 @@ gui: https://neovim.io/doc/user/gui.html
 node: 20.18.3
 clang: C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\Llvm\x64\bin
 python: 3.11+
+pynvim: 0.5.2+
 
-npm install tree-sitter@0.25.0 tree-sitter-cli@0.25.8 -g
+npm install tree-sitter@0.25.0 tree-sitter-cli@0.25.8 pynvim -g
 
 ```
 cd /nvim/share/
