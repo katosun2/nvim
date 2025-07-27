@@ -2,16 +2,17 @@
 
 ## 版本
 
-neovim: 0.11.3
-neovim-qt: [0.2.19](https://github.com/equalsraf/neovim-qt)
-gui: https://neovim.io/doc/user/gui.html
-node: 20.18.3
-clang: C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\Llvm\x64\bin
-python: 3.11+
-pynvim: 0.5.2+
+- neovim: 0.11.3
+- neovim-qt: [0.2.19](https://github.com/equalsraf/neovim-qt)
+- gui: https://neovim.io/doc/user/gui.html
+- node: 20.18.3
+- clang: C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\Llvm\x64\bin
+- python: 3.11+
+- pynvim: 0.5.2+
 
-npm install tree-sitter@0.25.0 tree-sitter-cli@0.25.8 pynvim -g
+npm install tree-sitter@0.25.0 tree-sitter-cli@0.25.8 -g
 
+pip install pynvim
 ```
 cd /nvim/share/
 git clone git@github.com:katosun2/nvim.git config
