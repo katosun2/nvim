@@ -33,6 +33,8 @@ export path+=D:\nvim-win64\bin
 ```
 vi nvim/init.vim`` 按需修改配置否则无法运行 checkhealth
 ```
+
+```
 " https://neovim.io/doc/user/provider.html
 let g:ruby_host_prog = ''
 let g:loaded_ruby_provider = 0
