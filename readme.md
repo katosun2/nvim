@@ -22,16 +22,16 @@ git clone git@github.com:katosun2/nvim.git config
 使用管理员权限运行 **添加nvim到右键.bat** 即可
 
 ## 环境配置
+```
 // 配置neovim调用的config
 export XDG_CONFIG_HOME=D:\nvim-win64\share\config
 export XDG_DATA_HOME=D:\nvim-win64\share\config
 export path+=D:\nvim-win64\share\config\third_party\bin
-
 export path+=D:\nvim-win64\bin
 ```
 
-``vi nvim/init.vim`` 按需修改配置否则无法运行 checkhealth
-
+```
+vi nvim/init.vim`` 按需修改配置否则无法运行 checkhealth
 ```
 " https://neovim.io/doc/user/provider.html
 let g:ruby_host_prog = ''
